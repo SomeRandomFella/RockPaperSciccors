@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ROCK PAPER SCISSORS</title>
+    <script src="hmm.js"></script>
+    <style>
+      body {
+        background-color: rgb(22, 22, 22);
+        margin: 0;
+      }
+
+      .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        font-weight: bold;
+        font-family: "Tagesschrift", system-ui;
+        color: rgb(255, 255, 255);
+      }
+
+      .button1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        background-color: rgb(22, 22, 22);
+        border: 2px solid white;
+        border-radius: 200px;
+        cursor: pointer;
+        max-width: 120px;
+        max-height: 120px;
+        transition: transform 0.2s ease;
+        overflow: hidden;
+        width: 20vw;
+        height: 20vw;
+        margin-right: 30px;
+      }
+
+      .rockimg {
+        width: 70%;
+        display: block;
+      }
+
+      .buttonstorage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button1:hover {
+        transform: translateY(-2px);
+      }
+
+      .button1:active {
+        transform: translateY(2px);
+      }
+      .hidden {
+        display: none;
+      } 
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+   <h1 class="header">ROCK PAPER SCISSORS</h1>
+   <div class="buttonstorage">
+    <button class="button1" onclick="computerFind('rock', playerName);">
+      <img src="images/rock.png" alt="rock" class="rockimg">
+    </button>
+    <button class="button1" onclick="computerFind('paper', playerName);">
+      <img src="images/paper-emoji.png" alt="paper" class="rockimg">
+    </button>
+    <button class="button1" onclick="computerFind('scissors', playerName);">
+      <img src="images/scissors-emoji.png" alt="scissors" class="rockimg">
+    </button>
+   </div>
+   <div id="test" class="hidden" style="border:1px solid red; height: 100px; width: 100px;">
+    Test 
+   </div>
+   <script>
+    playerName = Username();
+
+    
+   </script>
+  </body>
+  </html>
